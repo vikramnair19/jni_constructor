@@ -1,0 +1,5 @@
+gcc -shared -I /usr/lib/jvm/java-6-sun/include -I /usr/lib/jvm/java-6-sun/include/linux Sample1.c -o libsample1.so 
+
+javac Sample1.java SimEvent.java 
+java -Djava.library.path=. Sample1
+ 
